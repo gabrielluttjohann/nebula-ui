@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+}
+
+@theme {
+  /* Primary Colors - Nebula Tones */
+  --color-primary: #6d28d9; /* Nebula Purple */
+  --color-primary-foreground: #ede9fe; /* Soft Lavender */
+
+  --color-secondary: #9333ea; /* Cosmic Lilac */
+  --color-secondary-foreground: #f3e8ff; /* Nebular White */
+
+  --color-accent: #ec4899; /* Galactic Pink */
+  --color-accent-foreground: #fce7f3; /* Soft Pink */
+
+  /* Background and Neutral Elements */
+  --color-background: #0f172a; /* Interstellar Black */
+  --color-foreground: #e2e8f0; /* Light Gray */
+
+  --color-muted: #334155; /* Deep Space Blue */
+  --color-muted-foreground: #cbd5e1; /* Cool Gray */
+
+  /* Errors and Warnings */
+  --color-destructive: #dc2626; /* Alert Red */
+  --color-destructive-foreground: #fee2e2; /* Soft Red */
+
+  /* Extras */
+  --color-border: #1e293b; /* Dark Blue */
+  --color-ring: #7c3aed; /* Nebula Purple */
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  a {
+    color: var(--color-primary);
+  }
+}
